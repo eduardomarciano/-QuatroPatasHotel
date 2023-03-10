@@ -6,8 +6,6 @@ public abstract class Usuario {
     
     private String CPF;
     private String nome;
-    private String telefone;
-    private String email;
     private String login;
     private String senha;
    
@@ -16,11 +14,9 @@ public abstract class Usuario {
     public Usuario() {
     }
 
-    public Usuario(String CPF, String nome, String telefone, String email, String login, String senha) {
+    public Usuario(String CPF, String nome, String login, String senha) {
         this.CPF = CPF;
         this.nome = nome;
-        this.telefone = telefone;
-        this.email = email;
         this.login = login;
         this.senha = senha;
     }
@@ -45,22 +41,6 @@ public abstract class Usuario {
 
     public void setNome(String nome) {
         this.nome = nome;
-    }
-
-    public String getTelefone() {
-        return telefone;
-    }
-
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
     }
 
     public String getLogin() {

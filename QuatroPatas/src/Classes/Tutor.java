@@ -3,6 +3,7 @@ package Classes;
 public class Tutor {
     //Atributos do Tutor
     private String nome;
+    private String endereco;
     private String telefone;
     private String nomeContatoEmergencia;
     private String NumeroContatoEmergencia;
@@ -22,9 +23,6 @@ public class Tutor {
         this.NumeroContatoEmergencia = NumeroContatoEmergencia;
         this.petDoTutor = petDoTutor;
     }
-    
-    
-    
     
     // Metodos
     
@@ -71,8 +69,13 @@ public class Tutor {
     public void setPetDoTutor(Pet petDoTutor) {
         this.petDoTutor = petDoTutor;
     }
-    
-    
-    
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
     
 }

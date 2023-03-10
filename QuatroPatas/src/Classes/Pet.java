@@ -2,12 +2,13 @@ package Classes;
 
 public class Pet {
     // Atrubutos do Pet
-    private int     peso;
     private int     idade;
     private long    id;
-    private String  Nome;
+    private String  nome;
     private String  raca;
     private String  sexo;
+    private String  cor;
+    private String  obs;
     
     //Atributos de Relacionamento
     private Tutor tutorDoPet;
@@ -17,28 +18,23 @@ public class Pet {
     public Pet() {
     }
 
-    public Pet(int peso, int idade, long id, String Nome, String raca, String sexo, Tutor tutorDoPet) {
-        this.peso = peso;
+    public Pet(int idade, long id, String nome, String raca, String sexo, String cor, String obs, Tutor tutorDoPet) {
         this.idade = idade;
         this.id = id;
-        this.Nome = Nome;
+        this.nome = nome;
         this.raca = raca;
         this.sexo = sexo;
+        this.cor = cor;
+        this.obs = obs;
         this.tutorDoPet = tutorDoPet;
     }
+
+
     
     // Metodos
     
     
     //Get and Setters
-
-    public int getPeso() {
-        return peso;
-    }
-
-    public void setPeso(int peso) {
-        this.peso = peso;
-    }
 
     public int getIdade() {
         return idade;
@@ -57,11 +53,11 @@ public class Pet {
     }
 
     public String getNome() {
-        return Nome;
+        return nome;
     }
 
-    public void setNome(String Nome) {
-        this.Nome = Nome;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public String getRaca() {
@@ -80,6 +76,22 @@ public class Pet {
         this.sexo = sexo;
     }
 
+    public String getCor() {
+        return cor;
+    }
+
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
+
+    public String getObs() {
+        return obs;
+    }
+
+    public void setObs(String obs) {
+        this.obs = obs;
+    }
+
     public Tutor getTutorDoPet() {
         return tutorDoPet;
     }
@@ -87,6 +99,8 @@ public class Pet {
     public void setTutorDoPet(Tutor tutorDoPet) {
         this.tutorDoPet = tutorDoPet;
     }
+
+
     
     
 }
