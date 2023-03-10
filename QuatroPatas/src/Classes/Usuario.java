@@ -9,7 +9,7 @@ public abstract class Usuario {
     private String login;
     private String senha;
    
-    //Contrutores
+    //Construtores
 
     public Usuario() {
     }
